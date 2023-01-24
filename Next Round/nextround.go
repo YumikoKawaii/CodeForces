@@ -28,9 +28,7 @@ func main() {
 				break
 			}
 
-			if i == 0 {
-				rank = 1
-			} else if participants[i] != participants[i-1] {
+			if i == 0 || participants[i] != participants[i-1] {
 				rank = i + 1
 			}
 
